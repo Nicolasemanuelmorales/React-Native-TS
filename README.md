@@ -50,7 +50,7 @@ Crear un Archivo .npmrc con lo siguiente:
 `npm install redux`
 `npm install react-redux`
 
-####
+#### Store
 
 `expo install expo-secure-store`
 
