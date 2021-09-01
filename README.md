@@ -22,11 +22,11 @@
 
 `npm i react-native-modal`
 
-### Paper (Componentes externo)
+### Paper (Coleccion de componentes)
 
 `npm install react-native-paper`
 
-### FontAwesome(Componente externo)
+### FontAwesome Pro
 
 ##### Pasos Previos
 
@@ -55,3 +55,5 @@ Crear un Archivo .npmrc con lo siguiente:
 `expo install expo-secure-store`
 
 ### Axios
+
+`npm i axios`
