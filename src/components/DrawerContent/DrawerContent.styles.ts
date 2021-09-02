@@ -13,5 +13,10 @@ const styles = StyleSheet.create({
   drawerStyle: {
     paddingLeft: 10,
   },
+  img: {
+    width: 40,
+    height: 40,
+    padding: "4%",
+  },
 });
 export default styles;

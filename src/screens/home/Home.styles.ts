@@ -1,4 +1,5 @@
-import { StyleSheet, Platform } from "react-native";
+import { StyleSheet } from "react-native";
+import colors from "../../../assets/colors";
 
 const styles = StyleSheet.create({
   wrapper: {
@@ -14,6 +15,13 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     justifyContent: "space-around",
     marginTop: 20,
+  },
+  alert: {
+    bottom: 0,
+    backgroundColor: colors.ROJO_PRINCIPAL,
+  },
+  button: {
+    backgroundColor: colors.ROJO_PRINCIPAL,
   },
 });
 export default styles;

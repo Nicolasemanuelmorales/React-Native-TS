@@ -4,7 +4,7 @@ import Icon from "react-native-fontawesome-pro";
 import { View, Text, Image } from "react-native";
 import { DrawerContentScrollView } from "@react-navigation/drawer";
 import styles from "./DrawerContent.styles";
-
+import colors from "../../../assets/colors";
 interface IProps {
   navigation: any;
 }
@@ -16,10 +16,10 @@ function DrawerNavigatorContent({ navigation }: IProps) {
         <Drawer.Section>
           <View style={styles.headerDrawer}>
             <Image
-              style={{ width: 40, height: 40, padding: "4%" }}
+              style={styles.img}
               source={require("../../../assets/images/cat.png")}
             />
-            <Text style={styles.headerTitulo}>React Native Cats</Text>
+            <Text style={styles.headerTitulo}>React Native With Cats</Text>
           </View>
         </Drawer.Section>
         <Drawer.Item
@@ -31,7 +31,12 @@ function DrawerNavigatorContent({ navigation }: IProps) {
           }}
           style={styles.drawerStyle}
           icon={() => (
-            <Icon name={"home"} size={20} type="solid" color={"#C70039"} />
+            <Icon
+              name={"home"}
+              size={20}
+              type="solid"
+              color={colors.ROJO_PRINCIPAL}
+            />
           )}
         />
         <Drawer.Item
@@ -43,7 +48,12 @@ function DrawerNavigatorContent({ navigation }: IProps) {
           }}
           style={styles.drawerStyle}
           icon={() => (
-            <Icon name={"star"} type="solid" size={20} color={"#C70039"} />
+            <Icon
+              name={"star"}
+              type="solid"
+              size={20}
+              color={colors.ROJO_PRINCIPAL}
+            />
           )}
         />
       </DrawerContentScrollView>

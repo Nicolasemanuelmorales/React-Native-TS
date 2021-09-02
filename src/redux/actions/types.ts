@@ -4,3 +4,4 @@ export interface IAction {
 }
 
 export const LOADER = "LOADER";
+export const FAVORITO = "FAVORITO";
