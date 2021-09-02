@@ -1,7 +1,7 @@
 import React from "react";
 import { Drawer } from "react-native-paper";
 import Icon from "react-native-fontawesome-pro";
-import { View, Text } from "react-native";
+import { View, Text, Image } from "react-native";
 import { DrawerContentScrollView } from "@react-navigation/drawer";
 import styles from "./DrawerContent.styles";
 
@@ -15,18 +15,19 @@ function DrawerNavigatorContent({ navigation }: IProps) {
       <DrawerContentScrollView {...navigation}>
         <Drawer.Section>
           <View style={styles.headerDrawer}>
-            <View style={styles.circulo}>
-              <Icon name={"code"} type="solid" size={20} color={"#fff"} />
-            </View>
-            <View style={styles.headerTitulo}>
-              <Text>React Native</Text>
-            </View>
+            <Image
+              style={{ width: 40, height: 40, padding: "4%" }}
+              source={require("../../../assets/images/cat.png")}
+            />
+            <Text style={styles.headerTitulo}>React Native Cats</Text>
           </View>
         </Drawer.Section>
         <Drawer.Item
           label="Inicio"
           onPress={() => {
-            navigation.navigate("Home");
+            navigation.reset({
+              routes: [{ name: "Inicio" }],
+            });
           }}
           style={styles.drawerStyle}
           icon={() => (
@@ -36,7 +37,9 @@ function DrawerNavigatorContent({ navigation }: IProps) {
         <Drawer.Item
           label="Favoritos"
           onPress={() => {
-            navigation.navigate("Favoritos");
+            navigation.reset({
+              routes: [{ name: "Favoritos" }],
+            });
           }}
           style={styles.drawerStyle}
           icon={() => (

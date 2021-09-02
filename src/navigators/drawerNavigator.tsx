@@ -20,14 +20,12 @@ export default function DrawerNavigator() {
   return (
     <NavigationContainer theme={MyTheme}>
       <Drawer.Navigator
-        initialRouteName="Home"
-        screenOptions={{
-          headerShown: false,
-        }}
+        initialRouteName="Inicio"
+        screenOptions={{ headerTintColor: "#C70039" }}
         drawerContent={(props) => <DrawerNavigatorContent {...props} />}
       >
+        <Drawer.Screen name="Inicio" component={Home} />
         <Drawer.Screen name="Favoritos" component={Favoritos} />
-        <Drawer.Screen name="Home" component={Home} />
       </Drawer.Navigator>
     </NavigationContainer>
   );

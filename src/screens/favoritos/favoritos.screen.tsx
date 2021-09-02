@@ -10,7 +10,10 @@ export default function favoritos(props: IProps) {
 
   return (
     <View style={{ marginTop: 50 }}>
-      <Button title={"Favoritos"} onPress={() => navigation.navigate("Home")} />
+      <Button
+        title={"Favoritos"}
+        onPress={() => navigation.navigate("Inicio")}
+      />
     </View>
   );
 }

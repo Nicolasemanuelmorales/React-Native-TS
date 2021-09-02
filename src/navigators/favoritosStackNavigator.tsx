@@ -7,10 +7,7 @@ const Stack = createStackNavigator();
 
 export default function favoritosStackNavigator() {
   return (
-    <Stack.Navigator
-      initialRouteName="FavoritosScreen"
-      screenOptions={{ headerShown: false }}
-    >
+    <Stack.Navigator screenOptions={{ headerShown: false, title: "Favoritos" }}>
       <Stack.Screen name="FavoritosScreen" component={FavoritosScreen} />
     </Stack.Navigator>
   );
