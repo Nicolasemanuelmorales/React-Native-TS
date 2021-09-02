@@ -81,7 +81,7 @@ export default function Home() {
         style={styles.alert}
         visible={alert}
         onDismiss={() => setAlert(false)}
-        duration={3000}
+        duration={1000}
         action={{
           label: "X",
         }}
