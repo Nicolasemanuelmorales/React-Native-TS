@@ -6,7 +6,7 @@ interface ILoader {
   color: string;
 }
 
-function loader(props: ILoader) {
+function Loader(props: ILoader) {
   const { size, color } = props;
 
   return (
@@ -14,4 +14,4 @@ function loader(props: ILoader) {
   );
 }
 
-export default loader;
+export default Loader;

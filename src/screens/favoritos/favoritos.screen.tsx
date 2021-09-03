@@ -1,44 +1,43 @@
 import React from "react";
-import { View, Image } from "react-native";
+import { View, Image, Text, ScrollView } from "react-native";
 import { useSelector } from "react-redux";
 import { IRootState } from "../../redux/reducers/rootReducer";
-import colors from "../../../assets/colors";
 import styles from "./favoritos.styles";
-import { ScrollView } from "react-native-gesture-handler";
+import Wrapper from "../../components/wrapper/wrapper.components";
 
 export default function favoritos() {
   const favoritos = useSelector((state: IRootState) => state.favoritos.value);
 
   return (
-    <ScrollView>
-      <View
-        style={{
-          marginVertical: "5%",
-          flexDirection: "row",
-          paddingHorizontal: "5%",
-          justifyContent: "space-between",
-          flexWrap: "wrap",
-        }}
-      >
-        {favoritos.map((item, index) => {
-          {
-            console.log(item);
-          }
-          return (
-            <View
-              key={index}
-              style={{
-                width: "47.5%",
-                height: 200,
-                backgroundColor: colors.ROJO_PRINCIPAL,
-                marginTop: "5%",
-              }}
-            >
-              <Image key={index} style={styles.img} source={{ uri: item }} />
+    <Wrapper
+      child={
+        <>
+          {favoritos.length === 0 ? (
+            <View style={styles.boxText}>
+              <Text style={styles.text}>No ha agragado ninguna imagen. </Text>
             </View>
-          );
-        })}
-      </View>
-    </ScrollView>
+          ) : (
+            <ScrollView
+              showsVerticalScrollIndicator={false}
+              contentContainerStyle={styles.wrapper}
+            >
+              {favoritos.map((item, index) => {
+                return (
+                  <>
+                    <View key={index} style={styles.boxImg}>
+                      <Image
+                        key={index}
+                        style={styles.img}
+                        source={{ uri: item }}
+                      />
+                    </View>
+                  </>
+                );
+              })}
+            </ScrollView>
+          )}
+        </>
+      }
+    />
   );
 }

@@ -9,55 +9,54 @@ interface IProps {
   navigation: any;
 }
 
-function DrawerNavigatorContent({ navigation }: IProps) {
+function DrawerNavigatorContent(IProps) {
+  const { navigation } = IProps;
   return (
-    <>
-      <DrawerContentScrollView {...navigation}>
-        <Drawer.Section>
-          <View style={styles.headerDrawer}>
-            <Image
-              style={styles.img}
-              source={require("../../../assets/images/cat.png")}
-            />
-            <Text style={styles.headerTitulo}>React Native With Cats</Text>
-          </View>
-        </Drawer.Section>
-        <Drawer.Item
-          label="Inicio"
-          onPress={() => {
-            navigation.reset({
-              routes: [{ name: "Inicio" }],
-            });
-          }}
-          style={styles.drawerStyle}
-          icon={() => (
-            <Icon
-              name={"home"}
-              size={20}
-              type="solid"
-              color={colors.ROJO_PRINCIPAL}
-            />
-          )}
-        />
-        <Drawer.Item
-          label="Favoritos"
-          onPress={() => {
-            navigation.reset({
-              routes: [{ name: "Favoritos" }],
-            });
-          }}
-          style={styles.drawerStyle}
-          icon={() => (
-            <Icon
-              name={"star"}
-              type="solid"
-              size={20}
-              color={colors.ROJO_PRINCIPAL}
-            />
-          )}
-        />
-      </DrawerContentScrollView>
-    </>
+    <DrawerContentScrollView {...navigation}>
+      <Drawer.Section>
+        <View style={styles.headerDrawer}>
+          <Image
+            style={styles.img}
+            source={require("../../../assets/images/cat.png")}
+          />
+          <Text style={styles.headerTitulo}>React Native With Cats</Text>
+        </View>
+      </Drawer.Section>
+      <Drawer.Item
+        label="Inicio"
+        onPress={() => {
+          navigation.reset({
+            routes: [{ name: "Inicio" }],
+          });
+        }}
+        style={styles.drawerStyle}
+        icon={() => (
+          <Icon
+            name={"home"}
+            size={20}
+            type="solid"
+            color={colors.ROJO_PRINCIPAL}
+          />
+        )}
+      />
+      <Drawer.Item
+        label="Favoritos"
+        onPress={() => {
+          navigation.reset({
+            routes: [{ name: "Favoritos" }],
+          });
+        }}
+        style={styles.drawerStyle}
+        icon={() => (
+          <Icon
+            name={"star"}
+            type="solid"
+            size={20}
+            color={colors.ROJO_PRINCIPAL}
+          />
+        )}
+      />
+    </DrawerContentScrollView>
   );
 }
 

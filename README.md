@@ -6,6 +6,10 @@
 
 ## Creación del proyecto
 
+### Expo
+
+`npm install --global expo-cli`
+
 ### Interprete para crear templates
 
 `expo init "nombreDelProyecto"` y seleccionar la opción de Blank (typescript)
@@ -28,8 +32,6 @@
 
 ### FontAwesome Pro
 
-##### Pasos Previos
-
 Crear un Archivo .npmrc con lo siguiente:
 
 ```
@@ -41,7 +43,7 @@ Crear un Archivo .npmrc con lo siguiente:
 `expo install react-native-svg`
 `npm install --save react-native-svg`
 
-##### Instalacion de FontAwesome
+Instalacion de FontAwesome
 
 `npm install react-native-fontawesome-pro --save`
 
@@ -50,7 +52,7 @@ Crear un Archivo .npmrc con lo siguiente:
 `npm install redux`
 `npm install react-redux`
 
-#### Store
+Store
 
 `expo install expo-secure-store`
 

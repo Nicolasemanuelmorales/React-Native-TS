@@ -17,7 +17,6 @@ const styles = StyleSheet.create({
     marginTop: 20,
   },
   alert: {
-    bottom: 0,
     backgroundColor: colors.ROJO_PRINCIPAL,
   },
   button: {
