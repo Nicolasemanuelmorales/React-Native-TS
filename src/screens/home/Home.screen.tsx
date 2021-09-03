@@ -28,7 +28,6 @@ export default function Home() {
     getRandomCat()
       .then((resp: Cat[]) => {
         setImageRandom(resp[0]);
-        console.log(resp);
       })
       .finally(() => {
         setTimeout(() => dispatch(loaderAction(false)), 1000);
