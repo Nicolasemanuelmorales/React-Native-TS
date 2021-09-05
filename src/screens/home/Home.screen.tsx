@@ -63,15 +63,19 @@ export default function Home() {
             <Button
               color={colors.BLANCO}
               disabled={
-                favoritos.filter((item) => item === imageRandom.url).length ===
-                0
+                imageRandom === undefined
+                  ? null
+                  : favoritos.filter((item) => item === imageRandom.url)
+                      .length === 0
                   ? false
                   : true
               }
               contentStyle={{
                 backgroundColor:
-                  favoritos.filter((item) => item === imageRandom.url)
-                    .length === 0
+                  imageRandom === undefined
+                    ? null
+                    : favoritos.filter((item) => item === imageRandom.url)
+                        .length === 0
                     ? colors.ROJO_PRINCIPAL
                     : colors.ROJO_PRINCIPAL_DISABLE,
               }}
@@ -85,7 +89,9 @@ export default function Home() {
               )}
               onPress={() => {
                 setAlert(true),
-                  dispatch(favoritoAction([...favoritos, imageRandom.url]));
+                  imageRandom === undefined
+                    ? null
+                    : dispatch(favoritoAction([...favoritos, imageRandom.url]));
               }}
               children={"Favorito"}
             />

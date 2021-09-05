@@ -23,15 +23,13 @@ export default function favoritos() {
             >
               {favoritos.map((item, index) => {
                 return (
-                  <>
-                    <View key={index} style={styles.boxImg}>
-                      <Image
-                        key={index}
-                        style={styles.img}
-                        source={{ uri: item }}
-                      />
-                    </View>
-                  </>
+                  <View key={index} style={styles.boxImg}>
+                    <Image
+                      key={index}
+                      style={styles.img}
+                      source={{ uri: item }}
+                    />
+                  </View>
                 );
               })}
             </ScrollView>
