@@ -9,6 +9,7 @@ const styles = StyleSheet.create({
     marginTop: 10,
     marginLeft: 20,
     fontWeight: "bold",
+    fontSize: 14,
   },
   drawerStyle: {
     paddingLeft: 10,

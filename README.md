@@ -59,3 +59,19 @@ Store
 ### Axios
 
 `npm i axios`
+
+## Prettier
+
+Se configura desde los complementos del Visual Studio Code.
+
+1.  Se tiene que habilitar la opción **Format On Save** en `File -> Preferences -> Settings -> Text editor -> Formatting`.
+2.  Presionar `CTRL + SHIFT + P` , escribir **settings.json** y agregar :
+
+```
+ "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "[typescript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
+```
+
+> Prettier: No es necesario para la creacion ni para la ejecucion, pero si para mantener una convención.

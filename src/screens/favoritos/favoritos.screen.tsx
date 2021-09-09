@@ -14,7 +14,7 @@ export default function favoritos() {
         <>
           {favoritos.length === 0 ? (
             <View style={styles.boxText}>
-              <Text style={styles.text}>No ha agragado ninguna imagen. </Text>
+              <Text style={styles.text}>No ha agregado ninguna imagen. </Text>
             </View>
           ) : (
             <ScrollView

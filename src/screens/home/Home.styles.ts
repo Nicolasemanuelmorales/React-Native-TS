@@ -16,9 +16,6 @@ const styles = StyleSheet.create({
     justifyContent: "space-around",
     marginTop: 20,
   },
-  alert: {
-    backgroundColor: colors.ROJO_PRINCIPAL,
-  },
   button: {
     backgroundColor: colors.ROJO_PRINCIPAL,
   },

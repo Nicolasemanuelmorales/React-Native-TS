@@ -9,12 +9,12 @@ import loaderAction from "../../redux/actions/LoaderAction";
 import { IRootState } from "../../redux/reducers/rootReducer";
 import { getRandomCat } from "../../services/homeService";
 import styles from "./Home.styles";
-import Modal from "react-native-modal";
 import favoritoAction from "../../redux/actions/FavoritoAction";
 import colors from "../../../assets/colors";
 import Loader from "../../components/loader/loader.components";
 import Wrapper from "../../components/wrapper/wrapper.components";
 import Cat from "../../models/cat";
+import Alert from "../../components/alert/alert.components";
 
 export default function Home() {
   const loader = useSelector((state: IRootState) => state.loader.value);
@@ -90,27 +90,14 @@ export default function Home() {
                   children={"Favorito"}
                 />
               </View>
-              <Snackbar
-                wrapperStyle={{ alignSelf: "center" }}
-                style={styles.alert}
-                visible={alert}
-                onDismiss={() => setAlert(false)}
-                duration={1000}
-                action={{
-                  label: "X",
-                }}
-                theme={{ colors: { accent: colors.BLANCO } }}
-                children={"Se agrego la imagen a favoritos!"}
+              <Alert
+                open={alert}
+                close={() => setAlert(false)}
+                message="Se agrego la imagen a favoritos!"
               />
             </>
           )}
-          <Modal isVisible={loader} backdropOpacity={0.6} animationIn="flash">
-            {loader ? (
-              <Loader size={50} color={colors.ROJO_PRINCIPAL} />
-            ) : (
-              <View></View>
-            )}
-          </Modal>
+          <Loader open={loader} size={50} color={colors.ROJO_PRINCIPAL} />
         </>
       }
     />

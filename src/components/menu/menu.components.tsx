@@ -3,7 +3,7 @@ import { Drawer } from "react-native-paper";
 import Icon from "react-native-fontawesome-pro";
 import { View, Text, Image } from "react-native";
 import { DrawerContentScrollView } from "@react-navigation/drawer";
-import styles from "./DrawerContent.styles";
+import styles from "./menu.styles";
 import colors from "../../../assets/colors";
 interface IProps {
   navigation: any;

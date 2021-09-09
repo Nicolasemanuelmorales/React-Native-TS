@@ -2,7 +2,7 @@ import React from "react";
 import "react-native-gesture-handler";
 import { createDrawerNavigator } from "@react-navigation/drawer";
 import { DefaultTheme, NavigationContainer } from "@react-navigation/native";
-import DrawerNavigatorContent from "../components/drawerContent/DrawerContent.components";
+import Menu from "../components/menu/menu.components";
 import Home from "./homeStackNavigator";
 import Favoritos from "./favoritosStackNavigator";
 import colors from "../../assets/colors";
@@ -23,7 +23,7 @@ export default function DrawerNavigator() {
       <Drawer.Navigator
         initialRouteName="Inicio"
         screenOptions={{ headerTintColor: colors.ROJO_PRINCIPAL }}
-        drawerContent={(props) => <DrawerNavigatorContent {...props} />}
+        drawerContent={(props) => <Menu {...props} />}
       >
         <Drawer.Screen name="Inicio" component={Home} />
         <Drawer.Screen name="Favoritos" component={Favoritos} />
