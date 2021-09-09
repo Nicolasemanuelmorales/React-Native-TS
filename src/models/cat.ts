@@ -1,9 +1,9 @@
 export default class Cat {
-  breeds?: any[];
-  height?: number;
-  id?: string;
-  url?: string;
-  width?: number;
+  breeds: any[];
+  height: number;
+  id: string;
+  url: string;
+  width: number;
   constructor(params: Cat) {
     this.breeds = params.breeds;
     this.height = params.height;
