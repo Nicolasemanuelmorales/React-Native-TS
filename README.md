@@ -32,7 +32,8 @@
 
 ### Icons
 
-npm install --save react-native-vector-icons
+`npm install --save react-native-vector-icons`
+`@expo/vector-icons`
 
 ### Redux
 
