@@ -2,8 +2,8 @@ import React from "react";
 import { useState } from "react";
 import { useEffect } from "react";
 import { View, Image } from "react-native";
-import Icon from "react-native-fontawesome-pro";
-import { Button, Snackbar } from "react-native-paper";
+import Icon from "react-native-vector-icons/FontAwesome5";
+import { Button } from "react-native-paper";
 import { useDispatch, useSelector } from "react-redux";
 import loaderAction from "../../redux/actions/LoaderAction";
 import { IRootState } from "../../redux/reducers/rootReducer";
@@ -49,12 +49,7 @@ export default function Home() {
                   color={colors.BLANCO}
                   contentStyle={styles.button}
                   icon={() => (
-                    <Icon
-                      name={"redo-alt"}
-                      size={16}
-                      type="solid"
-                      color={colors.BLANCO}
-                    />
+                    <Icon name={"redo-alt"} size={16} color={colors.BLANCO} />
                   )}
                   onPress={getCat}
                   children={"Recargar"}
@@ -76,12 +71,7 @@ export default function Home() {
                         : colors.ROJO_PRINCIPAL_DISABLE,
                   }}
                   icon={() => (
-                    <Icon
-                      name={"star"}
-                      size={16}
-                      type="solid"
-                      color={colors.BLANCO}
-                    />
+                    <Icon name={"star"} size={16} color={colors.BLANCO} />
                   )}
                   onPress={() => {
                     setAlert(true),

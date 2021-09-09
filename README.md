@@ -30,22 +30,9 @@
 
 `npm install react-native-paper`
 
-### FontAwesome Pro
+### Icons
 
-Crear un Archivo .npmrc con lo siguiente:
-
-```
-@fortawesome:registry=https://npm.fontawesome.com/
-//npm.fontawesome.com/:_authToken="ACA VA EL TOKEN"
-```
-
-`npm install --save @fortawesome/pro-light-svg-icons @fortawesome/pro-regular-svg-icons @fortawesome/pro-solid-svg-icons @fortawesome/free-brands-svg-icons`
-`expo install react-native-svg`
-`npm install --save react-native-svg`
-
-Instalacion de FontAwesome
-
-`npm install react-native-fontawesome-pro --save`
+npm install --save react-native-vector-icons
 
 ### Redux
 

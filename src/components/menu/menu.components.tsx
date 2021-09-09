@@ -1,6 +1,6 @@
 import React from "react";
 import { Drawer } from "react-native-paper";
-import Icon from "react-native-fontawesome-pro";
+import Icon from "react-native-vector-icons/FontAwesome5";
 import { View, Text, Image } from "react-native";
 import { DrawerContentScrollView } from "@react-navigation/drawer";
 import styles from "./menu.styles";
@@ -31,12 +31,7 @@ function DrawerNavigatorContent(IProps) {
         }}
         style={styles.drawerStyle}
         icon={() => (
-          <Icon
-            name={"home"}
-            size={20}
-            type="solid"
-            color={colors.ROJO_PRINCIPAL}
-          />
+          <Icon name={"home"} size={20} color={colors.ROJO_PRINCIPAL} />
         )}
       />
       <Drawer.Item
@@ -48,12 +43,7 @@ function DrawerNavigatorContent(IProps) {
         }}
         style={styles.drawerStyle}
         icon={() => (
-          <Icon
-            name={"star"}
-            type="solid"
-            size={20}
-            color={colors.ROJO_PRINCIPAL}
-          />
+          <Icon name={"star"} size={20} color={colors.ROJO_PRINCIPAL} />
         )}
       />
     </DrawerContentScrollView>
