@@ -11,13 +11,11 @@ import { getRandomCat } from "../../services/homeService";
 import styles from "./Home.styles";
 import favoritoAction from "../../redux/actions/FavoritoAction";
 import colors from "../../../assets/colors";
-import Loader from "../../components/loader/loader.components";
 import Wrapper from "../../components/wrapper/wrapper.components";
 import Cat from "../../models/cat";
 import Alert from "../../components/alert/alert.components";
 
 export default function Home() {
-  const loader = useSelector((state: IRootState) => state.loader.value);
   const favoritos = useSelector((state: IRootState) => state.favoritos.value);
   const [imageRandom, setImageRandom] = useState<Cat>();
   const [alert, setAlert] = useState(false);
@@ -87,7 +85,6 @@ export default function Home() {
               />
             </>
           )}
-          <Loader open={loader} size={50} color={colors.ROJO_PRINCIPAL} />
         </>
       }
     />

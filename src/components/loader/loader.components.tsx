@@ -1,6 +1,7 @@
 import * as React from "react";
 import { ActivityIndicator } from "react-native-paper";
-import Modal from "react-native-modal";
+import { View } from "react-native";
+import styles from "./loader.styles";
 
 interface ILoader {
   size: number;
@@ -11,14 +12,17 @@ interface ILoader {
 function Loader(props: ILoader) {
   const { size, color, open } = props;
 
-  return (
-    <Modal isVisible={open} backdropOpacity={0.6} animationIn="flash">
-      {open ? (
-        <ActivityIndicator hidesWhenStopped={false} size={size} color={color} />
-      ) : (
-        <></>
-      )}
-    </Modal>
+  return open ? (
+    <View style={styles.boxGeneral}>
+      <ActivityIndicator
+        style={{ flex: 1, justifyContent: "center" }}
+        hidesWhenStopped={false}
+        size={size}
+        color={color}
+      />
+    </View>
+  ) : (
+    <></>
   );
 }
 

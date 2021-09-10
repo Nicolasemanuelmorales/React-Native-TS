@@ -22,18 +22,14 @@
 `expo install react-native-gesture-handler react-native-reanimated`
 `npm install @react-navigation/drawer`
 
-### Modal (Componente externo)
-
-`npm i react-native-modal`
-
 ### Paper (Coleccion de componentes)
 
 `npm install react-native-paper`
 
 ### Icons
 
-`npm install --save react-native-vector-icons`
-`@expo/vector-icons`
+`npm install react-native-vector-icons`
+`npm install @expo/vector-icons`
 
 ### Redux
 
