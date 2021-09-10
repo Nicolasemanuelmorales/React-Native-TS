@@ -44,6 +44,19 @@ Store
 
 `npm i axios`
 
+## Deploy con Expo Snack
+
+1. Ingresar a https://snack.expo.dev
+   > Puedes estar logeado o no. Es recomendado hacerlo ya que sino cualquier persona con el link podria editar el proyecto
+2. En los 3 puntos de "Proyect", en el panel izquierdo, seleccionar "Import git repository".
+3. Pegar el link base del proyecto
+
+> En el caso de que indique errores tiene que solucionarlos manualmente, o modificar el proyecto para que no sucedan.
+
+4. Presional Ctrl + s
+
+Si quieres utilizar el emulador, en la parte superior derecha de la pantalla hay un icono "<>" que te brindara el codigo html para poder utilizarlo
+
 ## Prettier
 
 Se configura desde los complementos del Visual Studio Code.
