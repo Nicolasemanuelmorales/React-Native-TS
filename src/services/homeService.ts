@@ -5,5 +5,5 @@ const url = urls.apiUrlCat;
 const search = "v1/images/search";
 
 export function getRandomCat(): Promise<any> {
-  return axiosNoAuth<any>(`${url}/${search}`, "GET", {});
+  return axiosNoAuth<any>(`${url}/${search}`, "GET");
 }
