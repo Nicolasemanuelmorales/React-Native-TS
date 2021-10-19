@@ -2,7 +2,7 @@
 - [Creación del proyecto e instalación de dependencias](#creación-del-proyecto-e-instalación-de-dependencias)
   - [Node.js](#nodejs)
   - [Expo](#expo)
-  - [Interprete para crear templates](#interprete-para-crear-templates)
+  - [Crear template (typescript)](#crear-template-typescript)
   - [Store](#store)
   - [Navigation](#navigation)
   - [Paper (Coleccion de componentes)](#paper-coleccion-de-componentes)
@@ -27,7 +27,7 @@ https://docs.expo.dev/
 ```
 npm install --global expo-cli
 ```
-## Interprete para crear templates
+## Crear template (typescript)
 
 En una terminal que no sea Git Bash y seleccionar la opción de Blank (typescript).
 
