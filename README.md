@@ -2,8 +2,8 @@
 - [Creación del proyecto e instalación de dependencias](#creación-del-proyecto-e-instalación-de-dependencias)
   - [Node.js](#nodejs)
   - [Expo](#expo)
-    - [Interprete para crear templates](#interprete-para-crear-templates)
-    - [Store](#store)
+  - [Interprete para crear templates](#interprete-para-crear-templates)
+  - [Store](#store)
   - [Navigation](#navigation)
   - [Paper (Coleccion de componentes)](#paper-coleccion-de-componentes)
   - [Icons](#icons)
@@ -27,7 +27,7 @@ https://docs.expo.dev/
 ```
 npm install --global expo-cli
 ```
-### Interprete para crear templates
+## Interprete para crear templates
 
 En una terminal que no sea Git Bash y seleccionar la opción de Blank (typescript).
 
@@ -35,7 +35,7 @@ https://reactnative.dev/docs/typescript
 ```
 expo init "nombreDelProyecto"
 ```
-### Store
+## Store
 
 https://docs.expo.dev/versions/latest/sdk/securestore/
 ```
